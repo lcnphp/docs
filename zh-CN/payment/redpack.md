@@ -121,6 +121,8 @@ $result = $redpack->prepare($redpackData);
 用于商户对已发放的红包进行查询红包的具体信息以及领取情况 ，普通红包和裂变包均使用这一接口进行查询。
 
 ```php
-$mchBillNo = "商户系统内部的订单号（mch_billno）";
+$params = [
+    'mch_billno' => "商户系统内部的订单号（mch_billno）"
+];
 $redpack->info($mchBillNo);
 ```
